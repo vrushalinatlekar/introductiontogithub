@@ -1,0 +1,22 @@
+<suite name="CrossBrowserSuite" parallel="tests" thread-count="2">
+	<test name="ChromeTests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+			<class name="factorial_site_testing.UITest"/> 
+            <class name="factorial_site_testing.PlaceholderTextTest"/>
+            <class name="factorial_site_testing.FactorialDataProviderTest"/>
+            <class name="factorial_site_testing.AboutPageLinksCountTest"/>
+            <class name="factorial_site_testing.BugValidationTest"/>
+        </classes>
+    </test>
+    <test name="FirefoxTests">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+			<class name="factorial_site_testing.UITest"/> 
+            <class name="factorial_site_testing.PlaceholderTextTest"/>
+            <class name="factorial_site_testing.FactorialDataProviderTest"/>
+            <class name="factorial_site_testing.AboutPageLinksCountTest"/>
+            <class name="factorial_site_testing.BugValidationTest"/>
+        </classes>
+    </test>
+</suite>

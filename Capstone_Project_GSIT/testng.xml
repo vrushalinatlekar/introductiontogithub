@@ -1,7 +1,0 @@
-<suite name="SampleSuite">
-<test name="SampleTests">
-<classes>
-<class name="tests.SampleTest"/>
-</classes>
-</test>
-</suite>
